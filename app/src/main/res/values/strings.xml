@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Buzz Me</string>
+    <string name="content_description_login_logo_imageView">Displays animated launcher icon in login_logo_imageView</string>
+    <string name="content_description_background_imageView">Displays an image with scrim in background</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_address">Address</string>
+    <string name="hint_email">Email Id</string>
+    <string name="hint_phone">Phone</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="or_register">or <u>REGISTER</u></string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm_password_before_registering">Confirm password before registering</string>
+    <string name="chats">Chats</string>
+    <string name="friends">Friends</string>
+    <string name="requests">Requests</string>
+    <string name="profile">Profile</string>
+    <string name="logout">LOGOUT</string>
+    <string name="loading">Loading…</string>
+    <string name="friend_requests">Friend Requests</string>
+    <string name="member_list">Member List</string>
+    <string name="no_friend_requests">0 Friend Requests</string>
+    <string name="add_friends">ADD FRIENDS</string>
+    <string name="send_button">Send Button</string>
+    <string name="add_new_friends">Add New Friends</string>
+    <string name="search">Search</string>
+</resources>

@@ -1,0 +1,98 @@
+<resources>
+
+    <!-- Base application theme -->
+    <style name="BuzzMeTheme" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/colorSecondary</item>
+    </style>
+
+    <!-- Splash screen theme -->
+    <style name="BuzzMeTheme.Splash" parent="BuzzMeTheme">
+        <item name="android:windowBackground">@drawable/splash_theme_background</item>
+    </style>
+
+
+    <!-- Widget styles======================================================================= -->
+    <style name="MyLoginTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="boxBackgroundColor">@color/loginCardViewBackground</item>
+        <item name="boxStrokeColor">@color/colorPrimary</item>
+        <item name="android:textColorHint">@color/hintColor</item>
+        <item name="hintEnabled">false</item>
+        <item name="errorEnabled">true</item>
+    </style>
+
+    <style name="MyRegisterTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">@color/loginCardViewBackground</item>
+        <item name="boxStrokeColor">@color/colorPrimary</item>
+        <item name="android:textColorHint">@color/hintColor</item>
+    </style>
+
+    <style name="MyTextInputEditText" parent="Base.Widget.MaterialComponents.TextInputEditText">
+        <item name="android:drawablePadding">15dp</item>
+        <item name="android:drawableTint">@color/colorPrimary</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Body1</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textColorHint">@color/hintColor</item>
+    </style>
+
+    <style name="MyTextButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Button</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="MyProfileTextView" parent="Base.Widget.AppCompat.TextView">
+        <item name="android:drawablePadding">15dp</item>
+        <item name="android:background">@drawable/text_view_border</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:drawableTint">@color/colorPrimary</item>
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Body1</item>
+    </style>
+
+    <style name="RowMemberListTextView" parent="Base.Widget.AppCompat.TextView">
+        <item name="android:padding">5dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Subtitle2
+        </item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="RowFriendRequestTextView" parent="Base.Widget.AppCompat.TextView">
+        <item name="android:padding">5dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Subtitle2
+        </item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="RowFriendListTextView" parent="Base.Widget.AppCompat.TextView">
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Subtitle2
+        </item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="MessageTextView" parent="Base.Widget.AppCompat.TextView">
+        <item name="android:padding">10dp</item>
+        <item name="android:elevation">5dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Body1</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="MessageTimeStampTextView" parent="Base.Widget.AppCompat.TextView">
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Caption
+        </item>
+    </style>
+
+</resources>

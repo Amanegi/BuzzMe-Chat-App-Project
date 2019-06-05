@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.DashboardActivity">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/dash_root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:elevation="10dp">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/dash_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?attr/actionBarSize"
+                app:titleTextAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:title="@string/app_name" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/dash_tab_layout"
+                style="@style/Widget.MaterialComponents.TabLayout.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?attr/actionBarSize"
+                app:tabGravity="fill"
+                app:tabTextAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
+                app:tabIconTint="@color/tabUnselectedColor"
+                app:tabIndicator="@drawable/custom_tab_indicator"
+                app:tabIndicatorColor="@color/tabSelectedColor"
+                app:tabIndicatorFullWidth="false"
+                app:tabMode="fixed"
+                app:tabSelectedTextColor="@color/tabSelectedColor"
+                app:tabTextColor="@color/tabUnselectedColor">
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/dash_tab_chats"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:icon="@drawable/icon_chats"
+                    android:soundEffectsEnabled="true"
+                    android:text="@string/chats" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/dash_tab_friends"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:icon="@drawable/icon_friends"
+                    android:soundEffectsEnabled="true"
+                    android:text="@string/friends" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/dash_tab_add_friend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:icon="@drawable/icon_add_friend"
+                    android:soundEffectsEnabled="true"
+                    android:text="@string/requests" />
+
+            </com.google.android.material.tabs.TabLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/dash_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</layout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#344955</color>
+    <color name="colorPrimaryDark">#232F34</color>
+    <color name="colorSecondary">#4A6572</color>
+    <color name="colorAccent">#F9AA33</color>
+    <color name="hintColor">#8d8d8d</color>
+    <color name="loginCardViewBackground">#eeeeee</color>
+    <color name="snackBarTextColor">#ef5350</color>
+    <color name="snackBarBackgroundColor">#1b1b1b</color>
+    <color name="tabSelectedColor">@color/colorAccent</color>
+    <color name="tabUnselectedColor">#90FFFFFF</color>
+    <color name="action_accept_icon_color">#00C853</color>
+    <color name="action_reject_icon_color">#D50000</color>
+    <color name="shimmer_placeholder_background">#dddddd</color>
+</resources>
