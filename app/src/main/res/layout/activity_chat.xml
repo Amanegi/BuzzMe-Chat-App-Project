@@ -8,14 +8,46 @@
         android:layout_height="match_parent"
         tools:context=".activity.ChatActivity">
 
+        <LinearLayout
+            android:id="@+id/chat_app_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:elevation="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/chat_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/circular_window_mask"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                tools:text="A" />
+
+            <TextView
+                android:id="@+id/chat_name"
+                style="@style/RowFriendListTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                tools:text="Friend Name" />
+
+        </LinearLayout>
+
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputLayout"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/chatSendButton"
             app:layout_constraintStart_toStartOf="parent">
@@ -51,7 +83,7 @@
             app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@id/chat_app_bar_layout" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

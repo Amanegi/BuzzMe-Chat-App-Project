@@ -67,8 +67,10 @@ public class ChatFragment extends Fragment {
                             @Override
                             public void onClick(View view, int position) {
                                 String friendId = friendList.get(position).getFriendId().toString();
+                                String friendName = friendList.get(position).getFriendName();
                                 Intent intent = new Intent(getActivity(), ChatActivity.class);
                                 intent.putExtra(ChatActivity.KEY_FRIEND_ID, friendId);
+                                intent.putExtra(ChatActivity.KEY_FRIEND_NAME, friendName);
                                 startActivity(intent);
                             }
                         };

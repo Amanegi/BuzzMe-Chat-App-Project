@@ -28,7 +28,8 @@ import retrofit2.Response;
 
 public class ChatActivity extends AppCompatActivity {
     public static final String KEY_FRIEND_ID = "key_friend_id";
-    private String userId, friendId;
+    public static final String KEY_FRIEND_NAME = "key_friend_name";
+    private String userId, friendId, friendName;
     private LoadMessages loadMessages;
     private ChatAdapter adapter;
 
@@ -38,6 +39,9 @@ public class ChatActivity extends AppCompatActivity {
         final ActivityChatBinding mBinding = DataBindingUtil.setContentView(this, R.layout.activity_chat);
         init();
         mBinding.chatRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+        //set name and image on title bar
+        mBinding.chatImage.setText(friendName.substring(0, 1).toUpperCase());
+        mBinding.chatName.setText(friendName);
 
         loadMessages = ViewModelProviders.of(this).get(LoadMessages.class);
         loadMessages.init(this, userId, friendId);
@@ -83,6 +87,7 @@ public class ChatActivity extends AppCompatActivity {
     private void init() {
         userId = String.valueOf(SharedPrefHelper.getPrefMemberId(this));
         friendId = getIntent().getStringExtra(KEY_FRIEND_ID);
+        friendName = getIntent().getStringExtra(KEY_FRIEND_NAME);
     }
 
     @Override
