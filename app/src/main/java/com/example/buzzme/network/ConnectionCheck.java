@@ -25,7 +25,7 @@ public class ConnectionCheck {
         Snackbar snackbar = Snackbar.make(rootLayout, "No internet connection!", Snackbar.LENGTH_SHORT);
         View sbView = snackbar.getView();
         sbView.setBackgroundColor(ContextCompat.getColor(context, R.color.snackBarBackgroundColor));
-        TextView sbText = sbView.findViewById(com.google.android.material.R.id.snackbar_text);
+        TextView sbText = sbView.findViewById(R.id.snackbar_text);
         sbText.setTextColor(ContextCompat.getColor(context, R.color.snackBarTextColor));
         sbText.setTextSize(16f);
         snackbar.show();

@@ -1,5 +1,6 @@
 package com.example.buzzme.model;
 
+import com.example.buzzme.utility.MsgCrypto;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
@@ -98,7 +99,7 @@ public class SingleReceivedMessageResponse {
     }
 
     public String getMessage() {
-        return message;
+        return MsgCrypto.decryptMessage(message);
     }
 
     public void setMessage(String message) {

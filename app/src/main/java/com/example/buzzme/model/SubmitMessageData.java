@@ -1,5 +1,6 @@
 package com.example.buzzme.model;
 
+import com.example.buzzme.utility.MsgCrypto;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
@@ -21,7 +22,7 @@ public class SubmitMessageData {
     public SubmitMessageData(String senderId, String receiverId, String subject, String messageBody) {
         this.senderId = senderId;
         this.subject = subject;
-        this.messageBody = messageBody;
+        this.messageBody = MsgCrypto.encryptMessage(messageBody); //encrypt message
         this.receiverId = receiverId;
     }
 
