@@ -1,5 +1,5 @@
 # BuzzMe-Chat-App-Project
-Chat application hitting api using retofit2
+Chat application hitting api using Retrofit2
 
 #### Login Screen
 <img src="screenshots/login_screen.png" height="400"/>
